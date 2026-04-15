@@ -1,12 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import logo from '../../assets/Images/logo.png'
+import { IoHome } from 'react-icons/io5';
+import { IoIosTime } from 'react-icons/io';
+import { ImStatsDots } from 'react-icons/im';
 
 const Navber = () => {
 
     const links = <>
-        <li><NavLink to={"/"} className={({isActive})=> ` mr-2 font-semibold ${isActive? "bg-green-700 text-white ": ""}`} >Home</NavLink></li>
-        <li><NavLink to={"/TimeLine"} className={({isActive}) => `mr-2 font-semibold ${isActive ? "bg-green-700 text-white" : ""}`}>Timeline</NavLink></li>
-        <li><NavLink to={"/States"} className={({isActive}) => `mr-2 font-semibold  ${isActive ? "bg-green-700 text-white" : ""}`}>States</NavLink></li>
+        <li><NavLink to={"/"} className={({ isActive }) => ` mr-2 font-semibold ${isActive ? "bg-green-700 text-white " : ""}`} ><IoHome /> Home</NavLink></li>
+        <li><NavLink to={"/TimeLine"} className={({ isActive }) => `mr-2 font-semibold ${isActive ? "bg-green-700 text-white" : ""}`}><IoIosTime /> Timeline</NavLink></li>
+        <li><NavLink to={"/States"} className={({ isActive }) => `mr-2 font-semibold  ${isActive ? "bg-green-700 text-white" : ""}`}><ImStatsDots /> States</NavLink></li>
     </>
     return (
         <nav className='bg-base-100 shadow-sm'>
@@ -21,7 +25,7 @@ const Navber = () => {
                             {links};
                         </ul>
                     </div>
-                    <h2 className='text-xl'><span className='font-bold'>Keen</span><span className='font-semibold'>Keeper</span></h2>
+                    <img src={logo} alt="" />
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
