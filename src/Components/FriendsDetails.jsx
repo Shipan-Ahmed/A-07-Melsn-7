@@ -48,15 +48,15 @@ const FriendsDetails = () => {
                 <div className='space-y-4 '>
                     <div className='flex gap-4 text-center justify-center items-center flex-col md:flex-row md:justify-between pt-10'>
                         <div className='h-[150px] w-[250px]   flex flex-col justify-center items-center space-y-2 rounded-xl bg-base-100 shadow-sm'>
-                            <p className='text-[#244D3F] font-bold text-2xl md:text-xl'>{days_since_contact} </p>
+                            <p className='text-[#244D3F] font-bold text-2xl md:text-xl lg:text-2xl'>{days_since_contact} </p>
                             <p className='text-gray-500 md:text-sm'>Days Since Contact</p>
                         </div>
                         <div className='h-[150px] w-[250px]  flex flex-col justify-center items-center space-y-2 rounded-xl  bg-base-100 shadow-sm'>
-                            <p className='text-[#244D3F] font-bold text-2xl md:text-xl'>{goal} </p>
+                            <p className='text-[#244D3F] font-bold text-2xl md:text-xl lg:text-2xl'>{goal} </p>
                             <p className='text-gray-500 md:text-sm'>Goal (Days)</p>
                         </div>
                         <div className='h-[150px] w-[250px]  flex flex-col justify-center items-center   space-y-2 rounded-xl  bg-base-100 shadow-sm'>
-                            <p className='text-[#244D3F] font-bold text-2xl md:text-sm lg:text-xl'>{next_due_date} </p>
+                            <p className='text-[#244D3F] font-bold text-2xl md:text-sm lg:text-2xl'>{next_due_date} </p>
                             <p className='text-gray-500 md:text-sm'>Next Due</p>
                         </div>
                        
