@@ -23,7 +23,7 @@ const FriendsDetails = () => {
         <section className='max-w-9/12 mx-auto bg-base-100 my-20 '>
             <div className='grid grid-cols-1 md:grid-cols-2 space-y-4 space-x-4'>
                 <div className='space-y-4  p-2 text-center '>
-                    <div className='space-y-4 bg-base-100 shadow-sm p-2'>
+                    <div className='space-y-4 rounded-xl bg-base-100 shadow-sm p-2'>
                         <img className='mx-auto rounded-full w-20' src={picture} alt="" />
                         <h2 className='text-xl font-bold'>{name} </h2>
                         <div className=' px-20 md:px-5 lg:px-6 xl: px-15'>
