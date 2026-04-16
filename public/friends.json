@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "name": "Aarav Sharma",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "email": "aarav.sharma@gmail.com",
+        "days_since_contact": 18,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "roommate"
+        ],
+        "bio": "Shared a dorm in Delhi University. Loves cricket and late-night chai.",
+        "goal": 14,
+        "next_due_date": "2026-04-05"
+    },
+    {
+        "id": 2,
+        "name": "Emily Carter",
+        "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+        "email": "emily.carter@mail.com",
+        "days_since_contact": 10,
+        "status": "almost_due",
+        "tags": [
+            "work",
+            "designer"
+        ],
+        "bio": "Worked together at a startup in NYC. Passionate about UI/UX design.",
+        "goal": 14,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 3,
+        "name": "Liam O'Connor",
+        "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+        "email": "liam.oconnor@mail.ie",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "gym",
+            "buddy"
+        ],
+        "bio": "Met at the gym. Always pushing for one more rep.",
+        "goal": 10,
+        "next_due_date": "2026-04-25"
+    },
+    {
+        "id": 4,
+        "name": "Sophia Martinez",
+        "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+        "email": "sophia.martinez@example.com",
+        "days_since_contact": 21,
+        "status": "overdue",
+        "tags": [
+            "travel",
+            "friend"
+        ],
+        "bio": "Backpacked across Europe together. Loves photography.",
+        "goal": 14,
+        "next_due_date": "2026-04-02"
+    },
+    {
+        "id": 5,
+        "name": "Noah Kim",
+        "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+        "email": "noah.kim@mail.kr",
+        "days_since_contact": 12,
+        "status": "almost_due",
+        "tags": [
+            "gaming",
+            "online"
+        ],
+        "bio": "Met through online gaming. Plays FPS and strategy games.",
+        "goal": 14,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 6,
+        "name": "Isabella Rossi",
+        "picture": "https://randomuser.me/api/portraits/women/60.jpg",
+        "email": "isabella.rossi@mail.it",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "language",
+            "exchange"
+        ],
+        "bio": "Language exchange partner for Italian and English practice.",
+        "goal": 7,
+        "next_due_date": "2026-04-22"
+    },
+    {
+        "id": 7,
+        "name": "Ethan Brown",
+        "picture": "https://randomuser.me/api/portraits/men/70.jpg",
+        "email": "ethan.brown@mail.com",
+        "days_since_contact": 16,
+        "status": "overdue",
+        "tags": [
+            "neighbor"
+        ],
+        "bio": "Lives next door. Often helps with weekend DIY projects.",
+        "goal": 14,
+        "next_due_date": "2026-04-08"
+    },
+    {
+        "id": 8,
+        "name": "Maya Singh",
+        "picture": "https://randomuser.me/api/portraits/women/80.jpg",
+        "email": "maya.singh@mail.in",
+        "days_since_contact": 7,
+        "status": "on-track",
+        "tags": [
+            "school",
+            "best friend"
+        ],
+        "bio": "Best friend since school days. Loves painting and music.",
+        "goal": 10,
+        "next_due_date": "2026-04-23"
+    }
+]

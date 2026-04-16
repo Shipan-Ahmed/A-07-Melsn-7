@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
-import logo from '../../assets/Images/logo.png'
+import logo from '../assets/Images/logo.png'
 import { IoHome } from 'react-icons/io5';
 import { IoIosTime } from 'react-icons/io';
 import { ImStatsDots } from 'react-icons/im';
