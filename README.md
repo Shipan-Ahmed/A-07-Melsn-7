@@ -75,10 +75,60 @@ KeenKeeper is a modern web application designed to help you maintain meaningful 
 ## 📂 Project Structure
 
 ```bash
-KEENKEEPER/ │── public/ │ ├── favicon.svg │ ├── friends.json │ └── icons.svg │ │── src/ │ ├── assets/ │ │ │ ├── Components/ │ │ ├── CustomsContext/ │ │ │ └── FriendsContextData.jsx │ │ ├── Banner.jsx │ │ ├── Error.jsx │ │ ├── Footer.jsx │ │ ├── Friend.jsx │ │ ├── Friends.jsx │ │ ├── FriendsDetails.jsx │ │ └── Navber.jsx │ │ │ ├── Layouts/ │ │ └── MainLayout.jsx │ │ │ ├── Pages/ │ │ ├── Homepages/ │ │ │ └── HomePage.jsx │ │ ├── States/ │ │ │ └── States.jsx │ │ ├── TimeLine/ │ │ │ └── TimeLine.jsx │ │ └── Route/ │ │ └── Root.jsx │ │ │ ├── index.css │ └── main.jsx │ │── index.html │── package.json │── vite.config.js │── README.md
+KEENKEEPER/
+│── public/
+│   ├── favicon.svg
+│   ├── friends.json
+│   └── icons.svg
+│
+│── src/
+│   ├── assets/
+│   │   ├── call.png
+│   │   ├── facebook.png
+│   │   ├── instagram.png
+│   │   ├── logo-xl.png
+│   │   ├── logo.png
+│   │   ├── text.png
+│   │   ├── twitter.png
+│   │   └── video.png
+│   │
+│   ├── Components/
+│   │   ├── CustomsContext/
+│   │   │   └── FriendsContextData.jsx
+│   │   ├── Banner.jsx
+│   │   ├── Error.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Friend.jsx
+│   │   ├── Friends.jsx
+│   │   ├── FriendsDetails.jsx
+│   │   └── Navber.jsx
+│   │
+│   ├── Layouts/
+│   │   └── MainLayout.jsx
+│   │
+│   ├── Pages/
+│   │   ├── Homepages/
+│   │   │   └── HomePage.jsx
+│   │   ├── States/
+│   │   │   └── States.jsx
+│   │   ├── TimeLine/
+│   │   │   └── TimeLine.jsx
+│   │   └── Route/
+│   │       └── Root.jsx
+│   │
+│   ├── index.css
+│   └── main.jsx
+│
+│── index.html
+│── package.json
+│── package-lock.json
+│── vite.config.js
+│── eslint.config.js
+│── .gitignore
+│── README.md
 ```
 
----
+
 
 ## ⚡ Key Functionalities
 
