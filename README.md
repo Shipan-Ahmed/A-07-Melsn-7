@@ -6,11 +6,12 @@ KeenKeeper is a modern web application designed to help you maintain meaningful 
 
 ## 🌐 Live Demo
 
-👉 [Add your live link here]
+👉 a-07-melsn-7.vercel.app
+
 
 ## 💻 GitHub Repository
 
-👉 [Add your repo link here]
+👉 https://github.com/Shipan-Ahmed/A-07-Melsn-7
 
 ---
 
@@ -118,7 +119,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/keenkeeper.git
+git clone https://github.com/Shipan-Ahmed/A-07-Melsn-7.git
 
 # Navigate into the project
 cd keenkeeper
@@ -153,7 +154,7 @@ You can deploy this project on:
 
 ## 👨‍💻 Author
 
-Developed by [Your Name]
+Developed by Shipan Ahmed
 
 ---
 
