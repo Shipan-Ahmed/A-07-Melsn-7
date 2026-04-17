@@ -8,11 +8,19 @@ const Banner = () => {
     const { friendsData, loading } = useContext(FriendsContext);
     console.log(friendsData); // undefine . why??
 
-    if (loading) {
-        return <p className="text-center">Loading...</p>;
-    }
+    // if (loading) {
+    //     return <p className="text-center">Loading...</p>;
+    // }
+
 
     const OnTracks = friendsData.filter(friend => friend.status === "on-track")
+    if (loading || !OnTracks) {
+        return (
+            <div className="flex justify-center items-center h-[300px]">
+                <span className="loading loading-bars loading-xl"></span>
+            </div>
+        );
+    }
 
     return (
         <section className=' my-20 border-b border-b-gray-300  pb-10 '>

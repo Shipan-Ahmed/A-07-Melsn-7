@@ -15,11 +15,17 @@ const FriendsDetails = () => {
     const {friendsData, timelineHandler, loading} = useContext(FriendsContext);
     // const [FriendsInfo] = FriendsData;
     // console.log(FriendsInfo);
-    if (loading) {
-        return <p className="text-center">Loading...</p>;
-    }
+
     const FriendInfo = friendsData.find(Friend => Friend.id === Number(Id.userId));
     console.log("Friend info: ", FriendInfo);
+
+    if (loading || !FriendInfo) {
+        return (
+            <div className="flex justify-center items-center h-[300px]">
+                <span className="loading loading-bars loading-xl"></span>
+            </div>
+        );
+    }
     const { name, picture, status, email, tags, bio, days_since_contact, goal, next_due_date } = FriendInfo;
     
     const clickHandler = (value) => {
