@@ -6,7 +6,7 @@ KeenKeeper is a modern web application designed to help you maintain meaningful 
 
 ## 🌐 Live Demo
 
-👉 a-07-melsn-7.vercel.app
+👉  https://a-07-melsn-7.vercel.app/
 
 
 ## 💻 GitHub Repository
@@ -114,6 +114,29 @@ src/
 * ⚠️ 404 page for invalid routes
 
 ---
+
+📸 UI Preview
+
+Homepage:
+<img width="1918" height="831" alt="image" src="https://github.com/user-attachments/assets/423788ef-f10c-4118-ad82-22a6a1b807ad" />
+
+
+Friends Section:
+<img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/c6a3b3c6-8f87-4942-b1b6-3f31079adcda" />
+
+Friend Details Section:
+<img width="1917" height="817" alt="image" src="https://github.com/user-attachments/assets/e51bb5ed-f39f-4579-9e36-11694e38bc36" />
+
+Timeline Section: 
+<img width="1913" height="871" alt="image" src="https://github.com/user-attachments/assets/0a1bd7a9-5fab-4b88-ad9d-a0a5bb59a2e3" />
+
+States Section:
+<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/b9428a09-fc41-4229-9b63-dfdde1cc5ba6" />
+
+Footer Section:
+<img width="1918" height="412" alt="image" src="https://github.com/user-attachments/assets/a90649ea-f971-4546-80ae-fa0e76613e22" />
+
+
 
 ## 📦 Installation & Setup
 
