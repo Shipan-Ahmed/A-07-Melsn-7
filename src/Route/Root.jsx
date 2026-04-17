@@ -11,11 +11,11 @@ const Root = createBrowserRouter([
     {
         path: "/",
         Component: MainLayout,
+        errorElement: <Error></Error>,
         children: [
             {
                 index: true,
                 Component: HomePage
-                // loader: () => fetch("/Friends.json")
             },
             {
                 path: "/TimeLine",
@@ -28,10 +28,14 @@ const Root = createBrowserRouter([
             {
                 path: "/:userId",
                 Component: FriendsDetails
+            }, 
+            {
+                path: "*",
+                Component: Error
             }
 
-        ],
-        errorElement: <Error></Error>
+        ]
+        
         
     }
 ])
