@@ -75,23 +75,7 @@ KeenKeeper is a modern web application designed to help you maintain meaningful 
 ## 📂 Project Structure
 
 ```bash
-src/
-│── components/
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── Friend.jsx
-│   └── Context/
-│       └── FriendsContextData.jsx
-│
-│── pages/
-│   ├── Home.jsx
-│   ├── FriendsDetails.jsx
-│   ├── Timeline.jsx
-│   ├── States.jsx
-│   └── NotFound.jsx
-│
-│── data/
-│   └── friends.json
+KEENKEEPER/ │── public/ │ ├── favicon.svg │ ├── friends.json │ └── icons.svg │ │── src/ │ ├── assets/ │ │ │ ├── Components/ │ │ ├── CustomsContext/ │ │ │ └── FriendsContextData.jsx │ │ ├── Banner.jsx │ │ ├── Error.jsx │ │ ├── Footer.jsx │ │ ├── Friend.jsx │ │ ├── Friends.jsx │ │ ├── FriendsDetails.jsx │ │ └── Navber.jsx │ │ │ ├── Layouts/ │ │ └── MainLayout.jsx │ │ │ ├── Pages/ │ │ ├── Homepages/ │ │ │ └── HomePage.jsx │ │ ├── States/ │ │ │ └── States.jsx │ │ ├── TimeLine/ │ │ │ └── TimeLine.jsx │ │ └── Route/ │ │ └── Root.jsx │ │ │ ├── index.css │ └── main.jsx │ │── index.html │── package.json │── vite.config.js │── README.md
 ```
 
 ---
