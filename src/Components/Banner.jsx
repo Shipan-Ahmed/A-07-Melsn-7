@@ -1,12 +1,19 @@
+
 import React, { useContext } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import { FriendsContext } from './CustomsContext/FriendsContextData';
 import Friend from './Friend';
 
 const Banner = () => {
-    const Friends = useContext(FriendsContext);
-    // console.log(Friends);
-    const OnTracks = Friends.filter(friend => friend.status === "on-track")
+    const { friendsData, loading } = useContext(FriendsContext);
+    console.log(friendsData); // undefine . why??
+
+    if (loading) {
+        return <p className="text-center">Loading...</p>;
+    }
+
+    const OnTracks = friendsData.filter(friend => friend.status === "on-track")
+
     return (
         <section className=' my-20 border-b border-b-gray-300  pb-10 '>
             <div className='text-center my-4 space-y-4  bg-base-100 '>
@@ -17,7 +24,7 @@ const Banner = () => {
             </div>
             <div className='flex gap-4 justify-center items-center flex-col md:flex-row md:justify-between pt-10'>
                 <div className='h-[150px] w-[250px]  flex flex-col justify-center items-center space-y-2 rounded-xl bg-base-100 shadow-sm'>
-                    <p className='text-[#244D3F] font-bold text-2xl'>{Friends.length} </p>
+                    <p className='text-[#244D3F] font-bold text-2xl'>{friendsData.length} </p>
                     <p className='text-gray-500'>Total Friends</p>
                 </div>
                 <div className='h-[150px] w-[250px]  flex flex-col justify-center items-center space-y-2 rounded-xl  bg-base-100 shadow-sm'>

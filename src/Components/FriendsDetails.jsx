@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router';
 import { FriendsContext } from './CustomsContext/FriendsContextData';
 import { MdDelete, MdOutlineTextsms } from 'react-icons/md';
@@ -12,15 +12,37 @@ import { CiVideoOn } from 'react-icons/ci';
 const FriendsDetails = () => {
     const Id = useParams();
     console.log(Id);
-    const FriendsInfo = useContext(FriendsContext);
+    const {friendsData, timelineHandler, loading} = useContext(FriendsContext);
     // const [FriendsInfo] = FriendsData;
     // console.log(FriendsInfo);
-
-    const FriendInfo = FriendsInfo.find(Friend => Friend.id === Number(Id.userId));
+    if (loading) {
+        return <p className="text-center">Loading...</p>;
+    }
+    const FriendInfo = friendsData.find(Friend => Friend.id === Number(Id.userId));
     console.log("Friend info: ", FriendInfo);
     const { name, picture, status, email, tags, bio, days_since_contact, goal, next_due_date } = FriendInfo;
+    
+    const clickHandler = (value) => {
+        const name = FriendInfo.name;
+        const type = value;
+        const time= new Date().toLocaleString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+        })
+        const objData = {
+            name,
+            type,
+            time
+        }
+        timelineHandler(objData);
+    }
+
     return (
-        <section className='max-w-9/12 mx-auto bg-base-100 my-20 '>
+        <section className='max-w-9/12 mx-auto  my-20 '>
             <div className='grid grid-cols-1 md:grid-cols-2 space-y-4 space-x-4'>
                 <div className='space-y-4  p-2 text-center '>
                     <div className='space-y-4 rounded-xl bg-base-100 shadow-sm p-2'>
@@ -40,13 +62,13 @@ const FriendsDetails = () => {
                         <p className='text-gray-500'> Preferred:  {email} </p>
                     </div>
                     <div className='space-y-4'>
-                        <button className='btn w-full flex justify-center items-center gap-2'> <span><IoIosNotifications /></span><span> Snooze 2 weeks</span></button>
-                        <button className='btn w-full flex justify-center items-center gap-2'> <span><FaArchive /></span><span>Archive</span></button>
-                        <button className='btn w-full flex justify-center items-center gap-2'><span ><MdDelete className='text-red-400' /></span><span className='text-red-400'>Delete</span></button>
+                        <button className=' btn bg-base-100 w-full flex justify-center items-center gap-2'> <span><IoIosNotifications /></span><span> Snooze 2 weeks</span></button>
+                        <button className=' btn bg-base-100 w-full flex justify-center items-center gap-2'> <span><FaArchive /></span><span>Archive</span></button>
+                        <button className=' btn bg-base-100 w-full flex justify-center items-center gap-2'><span ><MdDelete className='text-red-400' /></span><span className='text-red-400'>Delete</span></button>
                     </div>
                 </div>
-                <div className='space-y-4 '>
-                    <div className='flex gap-4 text-center justify-center items-center flex-col md:flex-row md:justify-between pt-10'>
+                <div className='space-y-8 '>
+                    <div className='flex gap-4 text-center justify-center items-center flex-col md:flex-row md:justify-between p-2'>
                         <div className='h-[150px] w-[250px]   flex flex-col justify-center items-center space-y-2 rounded-xl bg-base-100 shadow-sm'>
                             <p className='text-[#244D3F] font-bold text-2xl md:text-xl lg:text-2xl'>{days_since_contact} </p>
                             <p className='text-gray-500 md:text-sm'>Days Since Contact</p>
@@ -61,19 +83,19 @@ const FriendsDetails = () => {
                         </div>
                        
                     </div>
-                    <div className=' p-2  space-y-2 rounded-xl  bg-base-100 shadow-sm'>
+                    <div className=' p-4  space-y-2 rounded-xl  bg-base-100 shadow-sm'>
                         <div className='flex justify-between items-center'>
                             <p className='text-[#244D3F] font-bold'>Relationship Goal </p>
                             <button className='btn'>Edit</button>
                         </div>
                         <p className='text-gray-500'> Connect every <span className='text-[#244D3F] font-bold'>{goal} days</span>  </p>
                     </div>
-                    <div className='space-y-2 rounded-xl  bg-base-100 shadow-sm p-2'>
+                    <div className='space-y-2 rounded-xl  bg-base-100 shadow-sm p-4'>
                         <p className='text-[#244D3F] font-bold '>Quick Check-In </p>
                         <div className='flex justify-between items-center gap-2'>
-                            <button className='btn flex flex-col md:p-4 lg:p-10'><span><IoCallOutline className='text-[#244D3F]' /></span><span>Call</span></button >
-                            <button className='btn flex flex-col md:p-4 lg:p-10'><span><MdOutlineTextsms className='text-[#244D3F]' /></span><span>Text</span></button>
-                            <button className='btn flex flex-col md:p-4 lg:p-10'><span><CiVideoOn className='text-[#244D3F]' /></span><span>Video</span></button>
+                            <button onClick={() => clickHandler("call") } className='btn flex flex-col md:p-4 lg:p-10'><span><IoCallOutline className='text-[#244D3F]' /></span><span>Call</span></button >
+                            <button onClick={() => clickHandler("text") } className='btn flex flex-col md:p-4 lg:p-10'><span><MdOutlineTextsms className='text-[#244D3F]' /></span><span>Text</span></button>
+                            <button onClick={() => clickHandler("video")} className='btn flex flex-col md:p-4 lg:p-10'><span><CiVideoOn className='text-[#244D3F]' /></span><span>Video</span></button>
                         </div>
                     </div>
                 </div>
